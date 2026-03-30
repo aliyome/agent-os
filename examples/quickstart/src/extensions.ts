@@ -1,10 +1,16 @@
+// Extension example: custom mounts and MCP servers.
+//
+// To mount a host directory, provide a VirtualFileSystem driver:
+//
+//   const os = await AgentOs.create({
+//     mounts: [{ path: "/project", driver: myHostDriver, readOnly: true }],
+//   });
+
 import { AgentOs } from "@rivet-dev/agent-os-core";
 
-const os = await AgentOs.create({
-  mounts: [{ type: "host", path: "/project", hostPath: "/home/user/app" }]
-});
+const os = await AgentOs.create();
 
-const session = await os.createSession("pi", {
+const { sessionId } = await os.createSession("pi", {
   mcpServers: [{ type: "local", command: "npx", args: ["@playwright/mcp"] }],
-  cwd: "/project"
+  cwd: "/project",
 });
