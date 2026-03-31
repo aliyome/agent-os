@@ -231,7 +231,7 @@ test: build
 publish: build
 	$(eval VERSION := 0.0.$(shell date -u +%y%m%d%H%M%S))
 	@echo "=== Publishing with version $(VERSION) ==="
-	@for pkg in $(ALL_PACKAGES) _types; do \
+	@for pkg in $(ALL_PACKAGES); do \
 		node -e " \
 			const fs = require('fs'); \
 			const p = JSON.parse(fs.readFileSync('software/$$pkg/package.json', 'utf8')); \
@@ -269,7 +269,7 @@ publish-dry: build
 publish-force: build
 	$(eval VERSION := 0.0.$(shell date -u +%y%m%d%H%M%S))
 	@echo "=== Force publishing all with version $(VERSION) ==="
-	@for pkg in $(ALL_PACKAGES) _types; do \
+	@for pkg in $(ALL_PACKAGES); do \
 		node -e " \
 			const fs = require('fs'); \
 			const p = JSON.parse(fs.readFileSync('software/$$pkg/package.json', 'utf8')); \

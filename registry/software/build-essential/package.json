@@ -1,6 +1,6 @@
 {
   "name": "@rivet-dev/agent-os-build-essential",
-  "version": "0.0.260330091313",
+  "version": "0.0.260331072558",
   "type": "module",
   "license": "Apache-2.0",
   "description": "Build-essential WASM command set for agentOS (common + make + git)",

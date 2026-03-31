@@ -1,6 +1,6 @@
 {
   "name": "@rivet-dev/agent-os-zip",
-  "version": "0.0.260330091313",
+  "version": "0.0.260331072558",
   "type": "module",
   "license": "Apache-2.0",
   "description": "zip archive creation for agentOS",

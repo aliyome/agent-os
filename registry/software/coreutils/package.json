@@ -1,6 +1,6 @@
 {
   "name": "@rivet-dev/agent-os-coreutils",
-  "version": "0.0.260330091313",
+  "version": "0.0.260331072558",
   "type": "module",
   "license": "Apache-2.0",
   "description": "GNU coreutils for agentOS (sh, cat, ls, cp, sort, and 80+ commands)",

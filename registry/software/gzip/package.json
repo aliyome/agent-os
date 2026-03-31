@@ -1,6 +1,6 @@
 {
   "name": "@rivet-dev/agent-os-gzip",
-  "version": "0.0.260330091313",
+  "version": "0.0.260331072558",
   "type": "module",
   "license": "Apache-2.0",
   "description": "GNU gzip compression for agentOS (gzip, gunzip, zcat)",
