@@ -1,0 +1,23 @@
+{
+  "name": "@secure-exec/example-doom",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "make build",
+    "build:native": "make native",
+    "start": "make build && tsx src/index.ts",
+    "start:native": "make native && stty raw -echo && ./build/doom-native -iwad build/doom1.wad; stty sane",
+    "clean": "make clean",
+    "check-types": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@secure-exec/core": "link:../../../secure-exec-1/packages/core",
+    "@secure-exec/nodejs": "link:../../../secure-exec-1/packages/nodejs",
+    "@rivet-dev/agent-os-posix": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -10,8 +10,8 @@
  */
 
 import { describe, it, expect, afterEach, vi } from 'vitest';
-import { createWasmVmRuntime, WASMVM_COMMANDS } from '@secure-exec/wasmvm';
-import type { WasmVmRuntimeOptions } from '@secure-exec/wasmvm';
+import { createWasmVmRuntime, WASMVM_COMMANDS } from '@rivet-dev/agent-os-posix';
+import type { WasmVmRuntimeOptions } from '@rivet-dev/agent-os-posix';
 import { createKernel } from '@secure-exec/core';
 import { COMMANDS_DIR, hasWasmBinaries } from '../helpers.js';
 import type {

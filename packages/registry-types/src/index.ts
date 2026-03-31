@@ -1,6 +1,6 @@
 /**
  * Permission tier for WASM command execution.
- * Mirrors the PermissionTier from @secure-exec/wasmvm.
+ * Mirrors the PermissionTier from @rivet-dev/agent-os-posix.
  *
  * - full: spawn processes, network I/O, file read/write
  * - read-write: file read/write, no network or process spawning

@@ -8,7 +8,7 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { createWasmVmRuntime } from '@secure-exec/wasmvm';
+import { createWasmVmRuntime } from '@rivet-dev/agent-os-posix';
 import { createKernel } from '@secure-exec/core';
 import { COMMANDS_DIR, C_BUILD_DIR, hasWasmBinaries } from '../helpers.js';
 import type { Kernel } from '@secure-exec/core';

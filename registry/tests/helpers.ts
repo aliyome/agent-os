@@ -41,6 +41,6 @@ export function skipReason(): string | false {
 // Re-exports from secure-exec packages
 export { createKernel } from "@secure-exec/core";
 export type { Kernel } from "@secure-exec/core";
-export { createWasmVmRuntime } from "@secure-exec/wasmvm";
+export { createWasmVmRuntime } from "@rivet-dev/agent-os-posix";
 export { createNodeRuntime, createNodeHostNetworkAdapter } from "@secure-exec/nodejs";
 export { allowAll } from "@secure-exec/core";
