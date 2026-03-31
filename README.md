@@ -1,6 +1,10 @@
-# agentOS
+<p align="center">
+  <img src=".github/media/banner.png" alt="agentOS" width="600" />
+</p>
 
-**[Documentation](https://rivet.dev/docs/agent-os)** | **[Quickstart](https://rivet.dev/docs/agent-os/quickstart)** | **[agentOS vs Sandbox](https://rivet.dev/docs/agent-os/versus-sandbox)**
+<p align="center">
+  <b><a href="https://rivet.dev/docs/agent-os">Documentation</a></b> | <b><a href="https://rivet.dev/docs/agent-os/quickstart">Quickstart</a></b> | <b><a href="https://rivet.dev/docs/agent-os/versus-sandbox">agentOS vs Sandbox</a></b>
+</p>
 
 A portable open-source operating system for AI agents. Near-zero cold starts (~6 ms), up to 32x cheaper than sandboxes. Powered by WebAssembly and V8 isolates.
 
